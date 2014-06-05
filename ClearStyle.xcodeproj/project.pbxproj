@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		030184591940DF8600C14354 /* SHCPullToAddNewBehaviour.m in Sources */ = {isa = PBXBuildFile; fileRef = 030184571940DF8600C14354 /* SHCPullToAddNewBehaviour.m */; };
 		7244FC6415FF3FD200CBA029 /* SHCToDoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7244FC6315FF3FD200CBA029 /* SHCToDoItem.m */; };
 		729373E9160B2DC300158767 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 729373E8160B2DC300158767 /* Default-568h@2x.png */; };
 		72C62B3A15F4EEDD001956A3 /* SHCTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 72C62B3915F4EEDD001956A3 /* SHCTableView.m */; };
@@ -24,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		030184571940DF8600C14354 /* SHCPullToAddNewBehaviour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHCPullToAddNewBehaviour.m; sourceTree = "<group>"; };
+		030184581940DF8600C14354 /* SHCPullToAddNewBehaviour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHCPullToAddNewBehaviour.h; sourceTree = "<group>"; };
 		7244FC6215FF3FD200CBA029 /* SHCToDoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHCToDoItem.h; sourceTree = "<group>"; };
 		7244FC6315FF3FD200CBA029 /* SHCToDoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHCToDoItem.m; sourceTree = "<group>"; };
 		7244FC6B16006E3B00CBA029 /* SHCTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHCTableViewDataSource.h; sourceTree = "<group>"; };
@@ -114,6 +117,8 @@
 				72C62B3815F4EEDD001956A3 /* SHCTableView.h */,
 				72C62B3915F4EEDD001956A3 /* SHCTableView.m */,
 				7244FC6B16006E3B00CBA029 /* SHCTableViewDataSource.h */,
+				030184571940DF8600C14354 /* SHCPullToAddNewBehaviour.m */,
+				030184581940DF8600C14354 /* SHCPullToAddNewBehaviour.h */,
 			);
 			path = ClearStyle;
 			sourceTree = "<group>";
@@ -197,6 +202,7 @@
 				72D3690B15E67E1500E60CEE /* main.m in Sources */,
 				72D3690F15E67E1500E60CEE /* SHCAppDelegate.m in Sources */,
 				72D3691215E67E1500E60CEE /* SHCViewController.m in Sources */,
+				030184591940DF8600C14354 /* SHCPullToAddNewBehaviour.m in Sources */,
 				72D3692715E68D4400E60CEE /* SHCTableViewCell.m in Sources */,
 				72D3B50F15EE4EDA00B01682 /* SHCStrikethroughLabel.m in Sources */,
 				72C62B3A15F4EEDD001956A3 /* SHCTableView.m in Sources */,
