@@ -6,6 +6,7 @@
 #import "SHCViewController.h"
 #import "SHCToDoItem.h"
 #import "SHCTableViewCell.h"
+#import "SHCPullToAddNewBehaviour.h"
 
 @interface SHCViewController ()
 
@@ -18,6 +19,8 @@
     
     // the offset applied to cells when entering 'edit mode'
     float _editingOffset;
+    
+    SHCPullToAddNewBehaviour* _pullAddNewBehaviour;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -48,12 +51,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-        
+    
     self.view.backgroundColor = [UIColor blackColor];
     
     // configure the table
     [self.tableView registerClassForCells:[SHCTableViewCell class]];
     self.tableView.datasource = self;
+    
+    _pullAddNewBehaviour = [[SHCPullToAddNewBehaviour alloc] initWithTableView:self.tableView];
 }
 
 - (void)didReceiveMemoryWarning
@@ -105,7 +110,7 @@
 
 
 - (void) toDoItemDeleted:(SHCToDoItem*) todoItem
-{    
+{
     float delay = 0.0;
     
     [_toDoItems removeObject:todoItem];
@@ -182,7 +187,7 @@
 - (UIView *) cellForRow:(NSInteger) row;
 {
     SHCTableViewCell* cell = (SHCTableViewCell*)[_tableView dequeueReusableCell];
-        
+    
     int index = row;
     SHCToDoItem *item = _toDoItems[index];
     cell.todoItem = item;
